@@ -1,0 +1,179 @@
+:root{
+    --text-color: rgb(61, 58, 58);
+}
+body{
+    background: linear-gradient(to right, #00000000, #00000000), url("assets/pizza-home-4.PNG");
+    background-size: 100%;
+    color: var(--text-color);
+    font-family: 'Jura', sans-serif;
+    margin: auto;
+}
+
+/* Nav */
+#header-div{
+    font-size: 1em;
+    background-color: rgba(245, 245, 245, 0.70);
+}
+    #name-div{
+        justify-content: center;
+        display: flex;
+        margin: auto;
+        font-size: 4em;
+        padding-top: 10px;
+        font-family: 'Caveat', cursive;
+    }
+    .nav-list {
+        display: flex;
+        list-style: none;
+        margin: 10px 0px;
+        padding-inline-start: 0px;
+        font-size: 2em;
+        font-weight: 600;
+    }
+        li{
+            padding: 5px;
+            transition: ease-in 0.21s;
+            width: 25%;
+            text-align: center;
+            cursor: pointer;
+        }
+        li:hover{
+            background-color: rgba(245, 245, 245, 0.6);
+        }
+
+/* Home */
+#home-container{
+    height: 450px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    #home-text{
+        padding: 20px;
+        margin: 20px;
+        color: whitesmoke;
+        font-size: 2em;
+        font-weight: 300;
+        background-color: rgba(51, 47, 41, 0.42);
+        box-shadow: 0px 0px 40px 40px rgba(51, 47, 41, 0.42);
+        border-radius: 20px;
+    }
+        .home-text-title{
+            font-weight: 100;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            /* margin: auto; */
+        }
+        .home-text-subtitle{
+            font-weight: 100;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            margin: auto;
+            font-size: 1em;
+        }
+
+/* Menu */
+#menu-container{
+    display: flex;
+    justify-content: center;
+}
+    #menu-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 530px);
+        grid-template-rows: repeat(2, 280px);
+    }
+        .menu-item{
+            background-color: rgba(250, 235, 215, 0.90);
+            color: var(--text-color);
+            border-radius: 20px;
+            margin: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+            .item-name{
+                text-align: center;
+                margin: 12px;
+            }
+            .item-description{
+                text-align: center;
+                margin: 12px;
+            }
+            .item-price{
+                text-align: center;
+                margin: 12px;
+            }
+
+/* About */
+#about-container{
+    height: auto;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(250, 235, 215, 0.90);
+    width: 55%;
+    margin: 60px auto;
+    border-radius: 20px;
+}
+    #about-title{
+        font-size: 4em;
+        margin: 10px 0px 5px 0px;
+    }
+
+    .about-description{
+        font-size: 1.3em;
+        padding: 0px 25px;
+        margin: 10px;
+        text-align: center;
+    }
+
+/* Contact */
+#contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    /* background-color: antiquewhite; */
+}
+    #contact-text{
+        padding: 20px;;
+        color: whitesmoke;
+        font-size: 2em;
+        font-weight: 300;
+        background-color: rgba(51, 47, 41, 0.60);
+        box-shadow: 0px 0px 30px 30px rgba(51, 47, 41, 0.60);
+        border-radius: 20px;
+    }
+        .contact-text-title{
+            font-weight: 100;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            margin: -30px 0px 10px 0px;
+        }
+        .contact-text-subtitle{
+            font-weight: 100;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            margin: auto;
+            font-size: 1em;
+        }
+
+        #map-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px auto;
+        }
+
+        #map-iframe{
+            width: 600px;
+            height: 300px;  
+        }
